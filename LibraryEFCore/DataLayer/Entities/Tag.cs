@@ -6,7 +6,9 @@ namespace DataLayer.Entities
 {
     public class Tag
     {
+#pragma warning disable CS0649 // Field 'Tag._books' is never assigned to, and will always have its default value null
         private HashSet<Book> _books;
+#pragma warning restore CS0649 // Field 'Tag._books' is never assigned to, and will always have its default value null
         [Key]
         [Required]
         [MaxLength(50)]

@@ -8,7 +8,9 @@ namespace DataLayer.Entities
 {
     public class Order
     {
+#pragma warning disable CS0649 // Field 'Order._lineItems' is never assigned to, and will always have its default value null
         private HashSet<LineItem> _lineItems;
+#pragma warning restore CS0649 // Field 'Order._lineItems' is never assigned to, and will always have its default value null
 
         public int Id { get; set; }
         public DateTime OrderDate { get; set; }
